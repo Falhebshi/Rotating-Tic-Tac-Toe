@@ -1,0 +1,119 @@
+body{
+    background: url("images/background.png");
+}
+
+@font-face {
+  font-family: myFont; /* set name */
+  src: url(font/PressStart2P.ttf); /* url of the font */
+}
+
+#board {
+    display: none;
+    grid-template-columns: repeat(3, 100px); /* 3 columns, 100px each */
+    grid-template-rows: repeat(3, 100px);    /* 3 rows, 100px each */
+    gap: 3px; /* space between cells */
+    background-color: #948585; /* this becomes the grid lines */
+    padding: 3px;
+    width: fit-content;
+    margin: 20px auto; /* center it */
+}
+
+.cell {
+    background-color: rgb(241, 226, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgb(245, 240, 239);
+}
+
+footer {
+    background-color: rgb(241, 226, 223);;
+    text-align: center;
+    margin-top: 180px;
+    padding: 10px;
+    width: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 11px;
+    color: #473c3c;
+    font-family:myFont, Arial;
+     
+}
+
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-family: myFont, Arial;
+}
+
+h1 {
+    margin-bottom: 80px;
+    background: #CF5BC7;
+    background: linear-gradient(to right, #CF5BC7 8%, #E5DB83 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    /*outline*/
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #473c3c;
+}
+
+h2,h3 {
+    color: #473c3c;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+img{
+    width: 140%;
+    height: auto;
+}
+
+.goldButton, #startBtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.goldButton img , #startBtn img{
+    width: 150px; /* adjust size */
+    image-rendering: pixelated;
+    transition: transform 0.1s; /* smooth animation */
+}
+
+#explanation{
+    width: 300px;
+    margin: auto;
+}
+
+#explanation p{
+    font-family: myFont, arial;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 14px;
+    color:#473c3c
+}
